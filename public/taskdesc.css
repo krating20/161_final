@@ -1,0 +1,71 @@
+﻿header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3rem;
+    padding-bottom: 4rem;
+    justify-content:space-between;
+}
+img {
+    margin-right: 3rem;
+    width: 20%;
+}
+h1 {
+    font-size: 35px;
+}
+
+.taskdesc {
+    width: 80%;
+    height: 350px;
+    border: 1px solid #000;
+    margin: auto;
+    padding: 1rem;
+    
+}
+
+.home {
+    width: 30px;
+    height: 30px;
+}
+
+.desc{
+    width:900px;
+}
+
+.delete-icon {
+    color: red;
+    padding: 5px;
+    font-size:15px;
+    padding-right:10px;
+    background:none;
+    border:none;
+}
+
+    .delete-icon:hover {
+        background: #eee;
+        cursor: pointer;
+    }
+
+title {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.date{
+    display:flex;
+    align-items:center
+}
+
+.submit{
+    margin-left: 10px;
+}

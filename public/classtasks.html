@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Web Design tasks</title><!--can replaced by var from db-->
+    <link rel="stylesheet" href="classtasks.css">
+</head>
+<body>
+
+    <header>
+        <section>
+            <img src="./scu.png" />
+        </section>
+        <section style="margin-left: -45rem">
+            <h1 id = "classname_title"></h1>
+        </section>
+        <section>
+            <a href="./index.html"><img src="home.png" class="home"></a>
+        </section>
+    </header>
+
+
+    <section class="tasks">
+        <section class="button-task">
+            <!--list out all tasks for class-->
+            <main></main> <!--where temp is added-->
+            <template id="task-row-temp">
+                <section class="task-row">
+                    <button class="button-15"id="task_name"></button>
+                    <section>
+                        <p></p>
+                    </section>
+                    <!--<section class="icons">
+                        <a class="edit-icon">&#10003</a>
+                        <a class="delete-icon">&#10006</a>
+                    </section>-->
+                </section>
+            </template>
+
+            <section>
+                <button class="add-icon" id="newtask">&#10010</button>
+                <!--form that must be added for new task-->
+                <div class="form-popup" id="myForm">
+                    <form class="form-container">
+                        <section class="form">
+                            <h2>Enter New Task</h2>
+                            <section class="formdetails">
+                                <section>
+                                    <label for="class"><b>Class</b></label>
+                                    <input type="text" placeholder="Enter Class" name="class" id="classname" required>
+                                </section>
+                                <section>
+                                    <label for="taskname"><b>Task Name</b></label>
+                                    <input type="text" placeholder="Enter Task Name" name="taskname" id="assignment_name" required>
+                                </section>
+                                <section>
+                                    <label for="desc"><b>Description</b></label>
+                                    <input type="text" placeholder="Enter Description" name="desc" id="desc" required>
+                                </section>
+                                <section>
+                                    <label for="date"><b>Due Date</b></label>
+                                    <input type="date" id="duedate" name="trip-start" value="2021-11-27" min="2019-01-01" max="2022-12-31">
+                                </section>
+                                <section>
+                                    <button type="submit" id = "submit_button" class="formdetailsbtn">Submit</button>
+                                </section>
+                                <section>
+                                    <button type="button" class="formdetailsbtn" id="closeform">Close</button>
+                                </section>
+                            </section>
+                        </section>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
+<script src="classtasks.js"></script>

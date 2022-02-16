@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> $Task Description </title>
+    <link rel="stylesheet" href="taskdesc.css">
+
+</head>
+<body>
+    <header>
+        <section>
+            <img src="./scu.png" />
+        </section>
+        <section style="margin-left: -43rem">
+            <h1>Task Description</h1>
+        </section>
+        <section>
+            <a href="./index.html"><img src="home.png" class="home"></a>
+        </section>
+    </header>
+
+    <section class="taskdesc">
+
+        <section id="class-list"></section> <!--where temp should be added-->
+        <template id="task-info-temp">
+            <section class="title">
+                <h2><u></u></h2>
+                <!--<button class="edit-icon" id="editdesc">&#9998</button>-->
+            </section>
+            <h3>Class:</h3>
+            <p id = "classname"></p>
+            <h3>Description:</h3>
+            <p id="description"></p>
+        </template>
+
+        <!--<h2> <u>Lecture 18 check-in</u> </h2>
+    <button class="edit-icon" id="editdesc">&#9998</button>-->
+        <!--<p id="description">DESCRIPTION</p>--> <!--//value is pulled from js-->
+
+        <form>
+            <label for="duedate">Due date:</label>
+            <section class="date">
+                <input type="date" id="duedate" name="trip-start" value="2021-11-27" min="2019-01-01" max="2022-12-31">
+                <input type = 'button' class="submit" id="submit_dates" value="Set Due Date">
+            </section>
+            <section class="icons">
+                <a id = 'delete_icon' class="delete-icon"> Delete Task &#10006</a>
+                <!--<a class="delete-icon">&#10006</a>-->
+            </section>
+        </form>
+
+    </section>
+</body>
+</html>
+<script defer src="taskdesc.js"></script>

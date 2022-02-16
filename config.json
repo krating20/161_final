@@ -1,0 +1,9 @@
+{
+    "scheme": "mongodb+srv://",
+    "address": "tasks.wf8os.mongodb.net",
+    "defaultDatabase": "tasks",
+    "username": "akhemkhon",
+    "password": "00001579161",
+    "port": 8080
+  }
+  

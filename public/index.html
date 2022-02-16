@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>To Do List </title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+    rel="stylesheet"
+  />
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="./scu.png" />
+        </section>
+        <section >
+            <h1>Bronco List</h1>
+        </section>
+    </header>
+
+    <section class="main-body"><!--whole body section-->
+        <section><!-- search bar-->
+            <div class="search-container">
+                <input id = "searched_class" type="text" placeholder="Search by class..." name="search">
+                <button id="search_button" type="submit">&#x1F50E</button>
+            </div>
+        </section>
+        <section class="bottom-section"><!--bottom section-->
+            <section class="bottom-box">
+                <!-- list out all the classes-->
+                <section class="class-list">
+                    
+                    <section id="class-list"></section> <!--where temp should be added-->
+                    <template id="class-row-temp">
+                        <button class="btn"></button>
+                    </template>
+                    <!--<button class="add-icon">&#10010</button>-->
+                </section>
+                <!-- list out all the tasks-->
+                <section class="task-box" id="task-box">
+                    <h2>Current Assignments</h2>
+                    <main></main>
+                    <template id="task-row-temp">
+                        <section class="task-row">
+                            <button id = "task_button" class="button-15"></button>
+                            <section>
+                                <p></p>
+                            </section>
+                            <!-- <section class="icons">
+                                <a class="edit-icon">&#10003</a>
+                                <a class="delete-icon">&#10006</a>
+                            </section> -->
+                        </section>
+                    </template>
+
+                    <section>
+                        <button class="add-icon" id="newtask" >&#10010</button>
+                        <!--form which pops up when + is pressed-->
+                        <div class="form-popup" id="myForm">
+                            <form class="form-container" id = "formID">
+                                <section class="form">
+                                    <h2>Enter New Assignment</h2>
+                                    
+                                    <section class="formdetails">
+                                        <section>
+                                            <label for="class"><b>Class</b></label>
+                                            <input type="text" placeholder="Enter Class" name="class" id="classname" required>
+                                        </section>
+                                        <section>
+                                            <label for="taskname"><b>Assignment Name</b></label>
+                                            <input type="text" placeholder="Enter Assignment Name" name="taskname" id="assignment_name" required>
+                                        </section>
+                                        <section>
+                                            <label for="desc"><b>Description</b></label>
+                                            <input type="text" placeholder="Enter Description" name="desc" id="desc" required>
+                                        </section>
+                                        <section>
+                                            <label for="date"><b>Due Date</b></label>
+                                            <input type="date" id="duedate" name="trip-start" value= 'mm/dd/yyyy'>
+                                        </section>
+                                        <section>
+                                            <button input type = "submit" id = "submit_button" class="formdetailsbtn">Submit</button>
+                                        </section>
+                                        <section>
+                                            <button type="button" class="formdetailsbtn" id="closeform">Close</button>
+                                        </section>
+                                    </section>
+                                </section>
+                            </form>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
+<script src="index.js"></script>
