@@ -1,5 +1,5 @@
 # Bronco-List
-##How to run:
+## How to run:
 ###
 npm install
 ###
