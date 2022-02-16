@@ -1,3 +1,5 @@
+# Bronco-List
+##How to run:
 ###
 npm install
 ###
@@ -10,4 +12,4 @@ replace 8080 with chosen port number http://localhost:8080/public/index.html
 
 
 ###
-# Bronco-List
+
